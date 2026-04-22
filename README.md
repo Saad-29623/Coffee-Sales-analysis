@@ -1,3 +1,5 @@
+<img width="300" height="168" alt="images" src="https://github.com/user-attachments/assets/8291f26a-3cdd-487f-956c-2802cd556068" />
+
 ## Tools Used
 - Excel  
 - MySQL  
