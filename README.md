@@ -65,12 +65,14 @@ Order volume builds steadily through the afternoon and peaks at 6 PM, with the 3
 ## 7.What is the Average customer Spending per transactions?
 SELECT avg(money) AS Avg_Spending
 FROM index_2;<img width="238" height="78" alt="Avg" src="https://github.com/user-attachments/assets/1341082a-b253-4f6d-9083-96faabd7062a" />
+Current spending levels suggest steady but not fully optimized revenue per customer. Increasing this figure through strategic pricing, add-ons, or combo offers could unlock additional revenue without increasing customer volume.
 
 
 ## 8.Which transactions have sales greater than 20?
 SELECT coffee_name,money
 FROM index_2
 WHERE money > 20;<img width="401" height="254" alt="Hm" src="https://github.com/user-attachments/assets/7ee59d68-a546-40c5-8aa0-e0ca023ee9ab" />
+High-value transactions are not random—they are concentrated around premium and specialty beverages, particularly espresso and alcohol-based variants. Instead of treating all products equally, the business can leverage this by strategically positioning these items as premium offerings, optimizing their pricing, and using them to anchor upselling strategies that lift overall transaction value.
 
 ## 9.What are the different types of coffee available in the datase?
 SELECT DISTINCT coffee_name
