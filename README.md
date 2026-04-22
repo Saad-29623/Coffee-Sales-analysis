@@ -50,6 +50,35 @@ GROUP BY cash_type;<img width="376" height="176" alt="Type" src="https://github.
 SELECT cash_type,SUM(money) AS Total_Revenue
 FROM index_2
 GROUP BY cash_type;<img width="345" height="134" alt="Hm" src="https://github.com/user-attachments/assets/8566e107-4fcd-41e4-806d-8b8d83e68ed2" />
+## 6.What are the peak hours when the coffee shop recieve the highest number of records?
+SELECT HOUR(datetime) AS Hour,
+COUNT(*) AS Total_Orders
+FROM index_2
+GROUP BY HOUR(datetime)
+ORDER BY Total_Orders DESC;<img width="320" height="193" alt="Hours" src="https://github.com/user-attachments/assets/64f37b99-c918-4a30-8bec-833f29a1aa77" />
+
+## 7.What is the Average customer Spending per transactions?
+SELECT avg(money) AS Avg_Spending
+FROM index_2;<img width="238" height="78" alt="Avg" src="https://github.com/user-attachments/assets/1341082a-b253-4f6d-9083-96faabd7062a" />
+
+## 8.Which transactions have sales greater than 20?
+SELECT coffee_name,money
+FROM index_2
+WHERE money > 20;<img width="401" height="254" alt="Hm" src="https://github.com/user-attachments/assets/7ee59d68-a546-40c5-8aa0-e0ca023ee9ab" />
+
+## 9.What are the different types of coffee available in the datase?
+SELECT DISTINCT coffee_name
+FROM index_2;<img width="298" height="318" alt="Pra" src="https://github.com/user-attachments/assets/5a6efba5-5938-4a1f-bd22-b638acaf4fc0" />
+
+## 10.How can we assign a Row number to each transaction?
+SELECT coffee_name,money,cash_type,datetime,
+ROW_NUMBER() over(ORDER BY datetime) AS Row_Num
+FROM index_2;<img width="836" height="256" alt="Kho" src="https://github.com/user-attachments/assets/494c8225-9d0c-4f8a-9330-c12394ed1042" />
+
+
+
+
+
 
 
 
