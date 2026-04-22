@@ -25,6 +25,10 @@ This structured approach allowed me to convert raw transactional data into meani
 
 SELECT SUM(money) AS Total_Revenue FROM index_2; <img width="175" height="77" alt="Revenue" src="https://github.com/user-attachments/assets/6602ac2e-d4fe-4105-b2b6-e375e7a602ee" />
 
+The total revenue of 6890 provides a clear snapshot of overall sales performance. It serves as a baseline metric to evaluate business growth and track future trends. This insight highlights the current earning capacity and sets the foundation for deeper analysis into product performance and customer behavior.
+
+
+
 
 
 
