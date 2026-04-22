@@ -53,16 +53,19 @@ GROUP BY cash_type;<img width="376" height="176" alt="Type" src="https://github.
 SELECT cash_type,SUM(money) AS Total_Revenue
 FROM index_2
 GROUP BY cash_type;<img width="345" height="134" alt="Hm" src="https://github.com/user-attachments/assets/8566e107-4fcd-41e4-806d-8b8d83e68ed2" />
+Card transactions account for ~71% of total revenue (4869 out of 6890), making them the dominant revenue channel. Higher spending behavior among card users and positions digital payments as a key lever for revenue growth. 
 ## 6.What are the peak hours when the coffee shop recieve the highest number of records?
 SELECT HOUR(datetime) AS Hour,
 COUNT(*) AS Total_Orders
 FROM index_2
 GROUP BY HOUR(datetime)
 ORDER BY Total_Orders DESC;<img width="320" height="193" alt="Hours" src="https://github.com/user-attachments/assets/64f37b99-c918-4a30-8bec-833f29a1aa77" />
+Order volume builds steadily through the afternoon and peaks at 6 PM, with the 3–6 PM window consistently driving the highest traffic.Concentrated demand window is where operational efficiency matters most—delays or stock issues during these hours would disproportionately affect total sales.
 
 ## 7.What is the Average customer Spending per transactions?
 SELECT avg(money) AS Avg_Spending
 FROM index_2;<img width="238" height="78" alt="Avg" src="https://github.com/user-attachments/assets/1341082a-b253-4f6d-9083-96faabd7062a" />
+
 
 ## 8.Which transactions have sales greater than 20?
 SELECT coffee_name,money
