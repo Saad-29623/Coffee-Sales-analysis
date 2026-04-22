@@ -33,6 +33,7 @@ FROM index_2
 GROUP BY coffee_name
 ORDER BY Total_orders DESC
 LIMIT 1;<img width="596" height="176" alt="Sold" src="https://github.com/user-attachments/assets/2878ece4-41f4-4d96-96a8-4acb64833e3c" />
+Americano with milk is the top-selling coffee with 44 orders, indicating strong customer preference for this option. This suggests it plays a key role in overall sales volume and should be prioritized in inventory, promotions, and menu strategy to maximize revenue.
 
 ## 3. Which are the top 3 coffees that generate the highest revenue?
 SELECT coffee_name,SUM(money) As Total_Revenue 
